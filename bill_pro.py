@@ -465,6 +465,7 @@ m1.add_command(label='Grooming products',command=gr_p)
 
 m3= Menu(mymenu,tearoff=0)
 m3.add_command(label = 'About Us',command = abt_us)
+m3.add_command(label = 'Available Stock',command = avl_stk)
 
 root.config(menu=mymenu)
  
