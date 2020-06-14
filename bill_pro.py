@@ -4,6 +4,8 @@ from tkinter import messagebox as tkmsg
 import random
 import os
 
+#Gui billing software
+
 
 root = Tk()
 number  = random.randint(1000,50000)
