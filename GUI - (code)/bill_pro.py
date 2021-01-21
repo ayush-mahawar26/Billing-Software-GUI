@@ -234,7 +234,7 @@ root.maxsize(1500,786)
 root.minsize(1500,786)
 
 
-root.iconbitmap(r'bill_ZeH_icon.ico')
+root.iconbitmap(r'Assets\bill_ZeH_icon.ico')
 root.title('Billing Software')
 root.config(bg='black')
 
@@ -244,7 +244,7 @@ def gr_p():
 
     grom_p =  Tk()
     grom_p.title('Price Of Hair product')
-    grom_p.iconbitmap('trimmer_6a3_icon.ico')
+    grom_p.iconbitmap(r'Assets\\trimmer_6a3_icon.ico')
     grom_p.geometry('300x300+13+62')
     grom_p.maxsize(300,300)
     grom_p.minsize(300,300)
@@ -310,7 +310,7 @@ def hs_p():
 
     hsp_win =  Tk()
     hsp_win.title('Price Of Hair product')
-    hsp_win.iconbitmap('hairstyle_JZx_icon.ico')
+    hsp_win.iconbitmap('Assets\\hairstyle_JZx_icon.ico')
     hsp_win.geometry('300x380+13+62')
     hsp_win.maxsize(300,380)
     hsp_win.minsize(300,380)
@@ -387,7 +387,7 @@ def per_p():
     perfume.title('Price Of Perfumes')
     perfume.geometry('300x380+13+62')
     perfume.maxsize(300,380)
-    perfume.iconbitmap('perfume_hWZ_icon.ico')
+    perfume.iconbitmap('Assets\\perfume_hWZ_icon.ico')
     perfume.minsize(300,380)
 
     def col(rgb):
