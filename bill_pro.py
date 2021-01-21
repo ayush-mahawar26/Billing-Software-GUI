@@ -10,7 +10,7 @@ import os
 root = Tk()
 number  = random.randint(1000,50000)
 
-def qt():
+def qt():     # QUERY FOR EXITING THE CILLING WINDOW 
     x = tkmsg.askyesno('Exit Billing Software','Do you realy want to Exit Software')
 
     if x>0:
@@ -20,7 +20,7 @@ def qt():
         return
 
 
-def genrate():
+def genrate():   # GENERATE THE BILL 
     if name_var.get()=='' or phn_var.get()=='':
         tkmsg.showerror('Details Unfilled','Please Enter your Name or Phone Number')
         return
@@ -69,14 +69,14 @@ def genrate():
     txt_box.insert(END,'\t\t\t\tThank You For Shopping')
 
 
-def col(rgb):
+def col(rgb):  # COLOR FUNCTION 
     return "#%02x%02x%02x"%rgb
 
-def abt_us():
+def abt_us():  # INFO ABOUT DEVELOPERS
     tkmsg.showinfo('About Us','Made by - Ayush Mahawar , Abhinav Bhardwaj , Harsh Chauhan')
 
 
-def tot_bill():
+def tot_bill():   # FUNCTION TO CALCULATE THE TOTAL BILL 
     if name_var.get()=='' or phn_var.get()=='':
         tkmsg.showerror('Details Unfilled','Please Enter your Name or Phone Number')
         return
@@ -202,7 +202,7 @@ def tot_bill():
     if Total_p==0:
         tkmsg.showerror('Not Bought Anything','Please Select atleast One product ')
 
-def sv_bill():
+def sv_bill():     # SAVING THE THE BILL INTO BACKEND
     if tot_var.get()=='0.0':
         tkmsg.showerror('Not Bought Anything','Please Bought something, to save your bill')
     else:
@@ -216,7 +216,7 @@ def sv_bill():
             f.close()
             tkmsg.showinfo('Saved',f'Your Bill {number} number is saved succesfully')
 
-def get_bill():
+def get_bill():  # FUUCNTION TO FIND THE BILL FROM THE BACKEND 
     for  i in os.listdir('Bills'):
         if i == f'{billnum_var.get()}.txt':
             txt_box.delete('1.0',END)
@@ -238,8 +238,8 @@ root.iconbitmap(r'bill_ZeH_icon.ico')
 root.title('Billing Software')
 root.config(bg='black')
 
-
-def gr_p():
+# ===============  MENU ( OPTION 1 ) ==============================================
+def gr_p():  
 
 
     grom_p =  Tk()
@@ -454,6 +454,7 @@ def per_p():
     rk_opp.grid(row=4,column=0,pady=30)
 
     perfume.mainloop()
+# ==================== MENU (OPTION 1 ) ====== END ================================================
 
 # ====================== menu bar ===================================
 
@@ -704,7 +705,7 @@ txt_box =Text(root,bd=5,relief=SUNKEN,font=('Times of Roman',11,'bold'))
 txt_box.place(x=950,y=260,width=543,height = 501)
 
 
-def welcomescr():
+def welcomescr():   # DEFUALT TEXT IN TEXT AREA 
     
     txt_box.insert(END,f'''===========================================================
     \t\t\tShopping Bill
