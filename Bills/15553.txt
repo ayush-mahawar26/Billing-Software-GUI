@@ -2,17 +2,17 @@
     			Shopping Bill
 ===========================================================
     Customer's Name : Ayush
-    Customer's Phone Number : 8851259772
-    Bill Number : 42491
+    Customer's Phone Number : 8856329740
+    Bill Number : 15553
 
 ===========================================================
     	Product			Qty		Price
     
-	Creed Aventus			3		3447
-	LoReal Proffessial			2		2598
-	Brawn Trimmer			3		1200
+	Beardo Dark Side			5		7500
+	LoReal Proffessial			3		3897
+	Brawn Trimmer			2		800
 ----------------------------------------------------------------------------------------------------------		
-	TOtal Bill : 			Rs. 7245
-	Tax : 			Rs. 144.9
+	TOtal Bill : 			Rs. 12197
+	Tax : 			Rs. 243.94
 ----------------------------------------------------------------------------------------------------------				
-		Thank You For Shopping
+			Thank You For Shopping
